@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="25dp"
+    android:layout_marginLeft="25dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <EditText
+            android:id="@+id/company_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toLeftOf="@+id/fileSearch"
+            android:hint="@string/company_name"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textSize="@dimen/medium_font"
+            android:textColor="@android:color/white"
+            android:ems="10"/>
+
+        <ImageView
+            android:id="@+id/company_Search"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/searchbutton" />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <EditText
+            android:id="@+id/fname_lname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toLeftOf="@+id/fname_lname_Search"
+            android:hint="@string/fname_lname"
+            android:textSize="@dimen/medium_font"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textColor="@android:color/white"
+            android:ems="10"/>
+
+        <ImageView
+            android:id="@+id/fname_lname_Search"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/searchbutton" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <EditText
+            android:id="@+id/city_optional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toLeftOf="@+id/city_optional_Search"
+            android:hint="@string/city_optional"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textSize="@dimen/medium_font"
+            android:textColor="@android:color/white"
+            android:ems="10"/>
+
+        <ImageView
+            android:id="@+id/city_optional_Search"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/searchbutton" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+</LinearLayout>

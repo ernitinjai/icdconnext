@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">icdConnext</string>
+    <string name="register_device">Register Device</string>
+    <string name="company_code">Company Code</string>
+    <string name="error">Error</string>
+    <string name="compnay_code_req">Company code is required.</string>
+    <string name="ok">OK</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="signin">Sign in</string>
+    <string name="remember_uname">Remember Username</string>
+    <string name="uname_pname_req">Username is required.\nPassword is required.</string>
+    <string name="uname_req">Username is required.</string>
+    <string name="pname_req">Password is required.</string>
+    <string name="all">ALL</string>
+    <string name="sale">SALE</string>
+    <string name="refi">REFI</string>
+    <string name="all_reps">All Reps</string>
+    <string name="or">OR</string>
+    <string name="city">City</string>
+    <string name="file_nu">File Number</string>
+    <string name="street_nu">Street Number</string>
+    <string name="street_name">Street Name</string>
+    <string name="open_date">Open Date:</string>
+    <string name="from">From:</string>
+    <string name="to">To:</string>
+    <string name="close_date">Closed Date:</string>
+    <string name="file_search">File Search</string>
+    <string name="customer_search">Customer Search</string>
+    <string name="prelim_search">Prelim Search</string>
+    <string name="company_name">Company Name</string>
+    <string name="fname_lname">First Name/Last name</string>
+    <string name="city_optional">City(Optional)</string>
+    <string name="date_prelim_comp">Date Prelim Completed:</string>
+
+    <string name="details">DETAILS</string>
+    <string name="contacts">CONTACTS</string>
+    <string name="icd_services">ICD SERVICES</string>
+    <string name="icd_cloud_doc">ICDCLOUD DOCUMENTS</string>
+    <string name="loan_amt">Loan Amount:</string>
+    <string name="sale_price">Sales Price:</string>
+    <string name="file_type">File Type:</string>
+    <string name="date_opn">Date Opened:</string>
+    <string name="date_closed">Date Closed:</string>
+
+    <string name="email_pre_list_agent">Email Pre to Listing Agent? (Y/N)</string>
+    <string name="email_pre_to_escrow">Email Pre to Escrow? (Y/N)</string>
+    <string name="email_pre_to_lender">Email Pre to Lender? (Y/N)</string>
+    <string name="email_pre_to">Email Pre to:</string>
+    <string name="add_to_phone">+ Add to Phone</string>
+    <string name="req_prelim">Request Prelim</string>
+    <string name="please_enter_email">Please enter email address</string>
+    <string name="cancel">Cancel</string>
+    <string name="email">Email</string>
+    <string name="you_sure_logout">Are you sure you want to logout?</string>
+    <string name="no_doc_avail">No Documents Available</string>
+    <string name="no_ser_ordered">No Service Ordered</string>
+    <string name="no_network">The Internet connection appears to be offline.</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+
+
+
+</resources>

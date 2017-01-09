@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/no_doc_avail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_doc_avail"
+        android:textColor="@color/grey"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <ListView
+        android:id="@+id/document_list"
+        android:layout_width="match_parent"
+        android:choiceMode="singleChoice"
+        android:listSelector="@color/light_grey"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>

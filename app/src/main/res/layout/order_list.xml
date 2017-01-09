@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <View
+        android:id="@+id/filetype"
+        android:layout_gravity="center"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+       />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:id="@+id/first_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="30dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/file_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:textSize="@dimen/medium_font"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="File no"/>
+            <TextView
+                android:id="@+id/DateOpened"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:textSize="@dimen/medium_font"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="DateOpened"/>
+            <TextView
+                android:id="@+id/LoanAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:gravity="right"
+                android:textSize="@dimen/medium_font"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:text="LoanAmount"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/second_line"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/first_line">
+
+
+            <TextView
+                android:id="@+id/PropertyAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/medium_font"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:id="@+id/next_button"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@drawable/next_button"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:scaleType="centerInside"/>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/third_line"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@id/second_line"
+            android:layout_marginBottom="1dp"
+           >
+
+            <ImageView
+                android:id="@+id/prelimicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/documentsmall"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/ContactCompanyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:textSize="@dimen/medium_font"
+                android:textColor="@color/black"
+                android:text="ContactCompanyName"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey"
+        android:layout_margin="1dp"
+        />
+
+</LinearLayout>

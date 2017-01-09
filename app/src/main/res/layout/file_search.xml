@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="25dp"
+    android:layout_marginLeft="25dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <EditText
+            android:id="@+id/file_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toLeftOf="@+id/fileSearch"
+            android:hint="@string/file_nu"
+            android:singleLine="true"
+            android:textSize="@dimen/medium_font"
+            android:textColor="@android:color/white"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:ems="10"/>
+
+        <ImageView
+            android:id="@+id/fileSearch"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/searchbutton" />
+    </RelativeLayout>
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:text="@string/or"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <EditText
+            android:id="@+id/street_numer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toLeftOf="@+id/street_numerSearch"
+            android:hint="@string/street_nu"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textSize="@dimen/medium_font"
+            android:textColor="@android:color/white"
+            android:ems="10"/>
+
+        <ImageView
+            android:id="@+id/street_numerSearch"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/searchbutton" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <EditText
+            android:id="@+id/street_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toLeftOf="@+id/street_name_search"
+            android:hint="@string/street_name"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textSize="@dimen/medium_font"
+            android:textColor="@android:color/white"
+            android:ems="10"/>
+
+        <ImageView
+            android:id="@+id/street_name_search"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/searchbutton" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toLeftOf="@+id/city_search"
+            android:hint="@string/city"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textSize="@dimen/medium_font"
+            android:textColor="@android:color/white"
+            android:ems="10"/>
+
+        <ImageView
+            android:id="@+id/city_search"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/searchbutton" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/medium_font"
+        android:textColor="@color/colorWhite"
+        android:text="@string/open_date"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/medium_font"
+                android:textColor="@color/colorWhite"
+                android:text="@string/from"/>
+            <EditText
+                android:id="@+id/opendate_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:textSize="@dimen/small_font"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:editable="false"
+                android:text="8/12/2010"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/medium_font"
+                android:textColor="@color/colorWhite"
+                android:text="@string/to"/>
+            <EditText
+                android:id="@+id/opendate_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:editable="false"
+                android:textSize="@dimen/small_font"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_marginRight="10dp"
+                android:text="8/12/2010"/>
+            <ImageView
+                android:id="@+id/opendate_search"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/searchbutton"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/medium_font"
+        android:textColor="@color/colorWhite"
+        android:text="@string/close_date"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/medium_font"
+                android:textColor="@color/colorWhite"
+                android:text="@string/from"/>
+            <EditText
+                android:id="@+id/close_date_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/small_font"
+                android:inputType="none"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:editable="false"
+                android:text="8/12/2010"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/medium_font"
+                android:textColor="@color/colorWhite"
+                android:text="@string/to"/>
+            <EditText
+                android:id="@+id/close_date_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textSize="@dimen/small_font"
+                android:editable="false"
+                android:layout_marginRight="10dp"
+                android:text="8/12/2010"/>
+            <ImageView
+                android:id="@+id/close_date_search"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/searchbutton"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
